@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="facebook-domain-verification" content="sujfi8sdnaktgos0fttgzdj932hy73" />
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Ayasa Media</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #34495e;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .intro {
+      background-color: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #2ecc71;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .contact-form button:hover {
+      background-color: #27ae60;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+
+    .leftOriented {
+      align-items: end;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ayasa Media</h1><br>
+    <p>Your Partner in Digital Marketing Success</p>
+  </header>
+
+  <nav class="leftOriented">
+    <a href="#intro">Home</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <section class="intro" id="intro">
+      <h2>Welcome to Ayasa Media</h2>
+      <p>We are a team of innovative digital marketing experts dedicated to helping businesses grow through strategic online campaigns, SEO, social media management, and data-driven results. Whether you're a startup or an established enterprise, our tailored solutions will boost your online presence and drive results.</p>
+    </section>
+
+    <section class="contact-form" id="contact">
+      <h2>Contact Us</h2>
+      <form onsubmit="return submitForm()">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    function submitForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (name && email && message) {
+        alert(`Thank you, ${name}! We have received your message.`);
+        document.querySelector('form').reset();
+      } else {
+        alert('Please fill in all fields.');
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
